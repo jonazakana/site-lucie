@@ -1,0 +1,145 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+
+header {
+    background-color: #573F2E;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.hero {
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+}
+
+.hero .slideshow-container {
+    position: relative;
+    width: 100%;
+    height: 400px; /* Ajuste la hauteur du diaporama selon tes besoins */
+}
+
+.mySlides {
+    display: none;
+    width: 100%;
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.hero h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    color: #573F2E;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #573F2E;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #452D1F;
+}
+
+footer {
+    background-color: #573F2E;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+
+
+header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.hero h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    color: #573F2E;
+}
+
+footer {
+    background-color: #573F2E; /* Retour à la couleur marron */
+    color: #fff; /* Couleur du texte en blanc pour un contraste élevé */
+    text-align: center;
+    padding: 20px;
+    position: absolute; /* Position absolue pour placer le pied de page en bas de la page */
+    bottom: 0; /* Alignement en bas de la page */
+    width: 100%; /* Ajustement de la largeur pour occuper toute la largeur de la page */
+}
+
+.footer-content {
+    display: flex; /* Utilisation de flexbox pour aligner le contenu */
+    justify-content: space-between; /* Espace égal entre les éléments */
+    align-items: center; /* Alignement vertical */
+}
+
+.footer-content p {
+    margin: 0; /* Suppression des marges par défaut */
+}
+
+.hero {
+    background-color: #EEDBB2;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.hero h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    color: #573F2E;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #573F2E;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #452D1F;
+}
+
