@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Boutique en ligne</title>
+    <title>Erastís</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -11,23 +11,23 @@
         <h1>Erastís</h1>
         <nav>
             <ul>
-                <li><a href="#">Accueil</a></li>
-                <li><a href="#">Produits</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#" class="btn-nav">Accueil</a></li>
+                <li><a href="#" class="btn-nav">Boutique</a></li>
+                <li><a href="#" class="btn-nav">Contact</a></li>
             </ul>
-        </nav>
+        </nav>        
     </header>
 
     <section class="hero">
         <div class="slideshow-container">
             <div class="mySlides fade">
-                <img src="image1.jpg" style="width:100%">
+                <img src="assets/img1.png" style="width:100%">
             </div>
             <div class="mySlides fade">
-                <img src="image2.jpg" style="width:100%">
+                <img src="assets/img2.png" style="width:100%">
             </div>
             <div class="mySlides fade">
-                <img src="image3.jpg" style="width:100%">
+                <img src="assets/img3.png" style="width:100%">
             </div>
         </div>
         <div class="hero-content">
@@ -53,7 +53,7 @@
             slideIndex++;
             if (slideIndex > slides.length) {slideIndex = 1}    
             slides[slideIndex-1].style.display = "block";  
-            setTimeout(carousel, 2000); // Change image every 2 seconds
+            setTimeout(carousel, 3000); 
         }
     </script>
 </body>
