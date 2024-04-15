@@ -8,23 +8,52 @@ body {
 header {
     background-color: #573F2E;
     color: #fff;
-    padding: 20px;
-    text-align: center;
+    padding: 20px; /* Ajuste l'espacement intérieur du header */
+    overflow: hidden; /* Clear floats */
+    display: flex; /* Utilise Flexbox pour aligner les éléments horizontalement */
+    align-items: center; /* Centre verticalement les éléments dans le header */
+}
+
+.logo-container {
+    display: flex; /* Utilise Flexbox pour aligner les éléments horizontalement */
+    align-items: center; /* Centre verticalement les éléments dans le logo-container */
+}
+
+.logo-img {
+    width: 95px; /* Ajuste légèrement la largeur de l'image */
+    margin-right: 15px; /* Ajoute un espacement entre l'image et le texte */
+}
+
+.logo-text {
+    font-family: 'Playfair Display', serif; /* Police chic */
+    font-size: 40px; /* Augmente légèrement la taille du texte */
+    line-height: 1; /* Réinitialise la hauteur de ligne */
+}
+
+.nav-links {
+    margin-left: auto; /* Pousse les liens de navigation à droite */
+}
+
+nav {
+    text-align: center; /* Centre les éléments de la barre de navigation horizontalement */
+}
+
+.nav-links {
+    display: inline-block; /* Affiche la liste de liens en ligne */
 }
 
 nav ul {
     list-style: none;
     padding: 0;
-    margin: 0; /* Supprime les marges par défaut */
+    margin: 0;
 }
 
 nav ul li {
-    display: inline-block; /* Affiche les éléments li en ligne */
-    margin-right: 10px; /* Espacement entre les éléments li */
+    display: inline-block;
+    margin-right: 10px;
 }
 
 .btn-nav {
-    display: inline-block;
     background-color: #573F2E;
     color: #fff;
     padding: 10px 20px;
@@ -37,6 +66,9 @@ nav ul li {
     background-color: #452D1F;
 }
 
+.user-actions {
+    float: right; /* Positionne les actions de l'utilisateur à droite */
+}
 
 .hero {
     text-align: center;
@@ -47,7 +79,6 @@ nav ul li {
     align-items: center;
     position: relative;
 }
-
 
 .slideshow-container {
     position: absolute;
@@ -92,7 +123,6 @@ nav ul li {
     color: #fff;
 }
 
-
 .btn {
     display: inline-block;
     background-color: #573F2E;
@@ -116,7 +146,6 @@ footer {
     border-top: 1px solid #fff; /* Ajout d'une bordure en haut du pied de page */
     box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.1); /* Ajout d'une ombre en bas du pied de page */
 }
-
 
 header h1 {
     font-family: 'Playfair Display', serif;
@@ -177,4 +206,29 @@ footer {
 .btn:hover {
     background-color: #452D1F;
 }
+
+.img-btn {
+    display: inline-block;
+    padding: 5px; /* Ajoute un peu d'espace autour de l'image pour l'interaction */
+    transition: transform 0.3s ease; /* Ajoute une animation de transformation au survol */
+}
+
+.img-btn:hover {
+    transform: scale(1.1); /* Agrandit légèrement le conteneur au survol */
+    cursor: pointer; /* Change le curseur en main pour indiquer l'interactivité */
+}
+
+/* Pour ajuster la taille des boutons */
+.img-btn {
+    width: 40px; /* Largeur fixe pour les boutons */
+    height: 40px; /* Hauteur fixe pour les boutons */
+    margin-right: 10px; /* Ajoute une marge à droite de chaque bouton */
+}
+
+/* Pour aligner les images à droite */
+.user-actions {
+    margin-left: auto;
+}
+
+
 
