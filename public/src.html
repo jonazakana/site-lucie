@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Erastís</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="../assets/logo.png" alt="Logo de la boutique" class="logo-img">
+            <div class="logo-text">Erastís</div>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#" class="btn-nav">Accueil</a></li>
+                <li><a href="#" class="btn-nav">Boutique</a></li>
+                <li><a href="#" class="btn-nav">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="user-actions">
+            <div class="img-btn"><img src="../assets/panier.png" alt="Panier"></div>
+            <a href="connexion.html" class="img-btn"><img src="../assets/login.png" alt="Connexion"></a>
+
+        </div>
+    </header>
+    <section class="hero">
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <img src="../assets/img1.png" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <img src="../assets/img2.png" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <img src="../assets/img3.png" style="width:100%">
+            </div>
+        </div>
+        <div class="hero-content">
+            <h2>Découvrez nos dernières collections</h2>
+            <a href="#" class="btn">Voir les produits</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Boutique en ligne. Tous droits réservés.</p>
+    </footer>
+
+    <script>
+        var slideIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}    
+            slides[slideIndex-1].style.display = "block";  
+            setTimeout(carousel, 3000); 
+        }
+    </script>
+</body>
+</html>
+

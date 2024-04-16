@@ -1,0 +1,316 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+
+header {
+    background-color: #573F2E;
+    color: #fff;
+    padding: 20px; /* Ajuste l'espacement intérieur du header */
+    overflow: hidden; /* Clear floats */
+    display: flex; /* Utilise Flexbox pour aligner les éléments horizontalement */
+    align-items: center; /* Centre verticalement les éléments dans le header */
+}
+
+.logo-container {
+    display: flex; /* Utilise Flexbox pour aligner les éléments horizontalement */
+    align-items: center; /* Centre verticalement les éléments dans le logo-container */
+}
+
+.logo-img {
+    width: 95px; /* Ajuste légèrement la largeur de l'image */
+    margin-right: 15px; /* Ajoute un espacement entre l'image et le texte */
+}
+
+.logo-text {
+    font-family: 'Playfair Display', serif; /* Police chic */
+    font-size: 40px; /* Augmente légèrement la taille du texte */
+    line-height: 1; /* Réinitialise la hauteur de ligne */
+}
+
+.nav-links {
+    margin-left: auto; /* Pousse les liens de navigation à droite */
+}
+
+nav {
+    text-align: center; /* Centre les éléments de la barre de navigation horizontalement */
+}
+
+.nav-links {
+    display: inline-block; /* Affiche la liste de liens en ligne */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.btn-nav {
+    background-color: #573F2E;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn-nav:hover {
+    background-color: #452D1F;
+}
+
+.user-actions {
+    float: right; /* Positionne les actions de l'utilisateur à droite */
+}
+
+.hero {
+    text-align: center;
+    overflow: hidden;
+    height: calc(100vh - 140px); /* Calcul de la hauteur de la section hero */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.slideshow-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.mySlides {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 1s ease; /* Transition de l'opacité pendant 1 seconde avec une accélération */
+}
+
+.mySlides.fade {
+    opacity: 1;
+    animation: fadeEffect 3s ease; /* Animation de fondu pendant 3 secondes avec une accélération */
+}
+
+@keyframes fadeEffect {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.hero-content {
+    position: relative; /* Retour à la position relative */
+    z-index: 1;
+}
+
+.hero h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #573F2E;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #452D1F;
+}
+
+footer {
+    background-color: #573F2E;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px; /* Ajout d'un espacement supplémentaire en haut du pied de page */
+    border-top: 1px solid #fff; /* Ajout d'une bordure en haut du pied de page */
+    box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.1); /* Ajout d'une ombre en bas du pied de page */
+}
+
+header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.hero h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+footer {
+    background-color: #573F2E; /* Retour à la couleur marron */
+    color: #fff; /* Couleur du texte en blanc pour un contraste élevé */
+    text-align: center;
+    padding: 20px;
+    position: absolute; /* Position absolue pour placer le pied de page en bas de la page */
+    bottom: 0; /* Alignement en bas de la page */
+    width: 100%; /* Ajustement de la largeur pour occuper toute la largeur de la page */
+}
+
+.footer-content {
+    display: flex; /* Utilisation de flexbox pour aligner le contenu */
+    justify-content: space-between; /* Espace égal entre les éléments */
+    align-items: center; /* Alignement vertical */
+}
+
+.footer-content p {
+    margin: 0; /* Suppression des marges par défaut */
+}
+
+.hero {
+    background-color: #EEDBB2;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.hero h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    color: #573F2E;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #573F2E;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #452D1F;
+}
+
+.img-btn {
+    display: inline-block;
+    padding: 5px; /* Ajoute un peu d'espace autour de l'image pour l'interaction */
+    transition: transform 0.3s ease; /* Ajoute une animation de transformation au survol */
+}
+
+.img-btn:hover {
+    transform: scale(1.1); /* Agrandit légèrement le conteneur au survol */
+    cursor: pointer; /* Change le curseur en main pour indiquer l'interactivité */
+}
+
+/* Pour ajuster la taille des boutons */
+.img-btn {
+    width: 40px; /* Largeur fixe pour les boutons */
+    height: 40px; /* Hauteur fixe pour les boutons */
+    margin-right: 10px; /* Ajoute une marge à droite de chaque bouton */
+}
+
+/* Pour aligner les images à droite */
+.user-actions {
+    margin-left: auto;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5deb3; /* Beige */
+}
+
+.login-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #573F2E; /* Brun */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centre les éléments horizontalement */
+    margin-bottom: 20px;
+}
+
+.logo-img {
+    width: 40px;
+    margin-right: 10px;
+}
+
+.logo-text {
+    font-size: 20px;
+    color: #fff; /* Couleur de texte blanche */
+}
+
+h2 {
+    text-align: center;
+    color: #fff; /* Couleur de titre blanche */
+}
+
+form {
+    margin-top: 20px;
+}
+
+/* Pour centrer les champs d'entrée */
+/* Pour centrer et espacer les champs d'entrée */
+input[type="email"],
+input[type="password"],
+button {
+    width: 100%;
+    max-width: 300px; /* Largeur maximale des champs d'entrée */
+    padding: 10px;
+    margin: 0 auto 10px; /* Centre les champs d'entrée horizontalement et ajoute une marge en bas */
+    display: block; /* Assure-toi que les champs d'entrée occupent toute la largeur disponible */
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+
+
+input[type="email"],
+input[type="password"] {
+    background-color: #f9f9f9; /* Couleur de fond similaire à celle de la page principale */
+}
+
+button {
+    background-color: #fff; /* Couleur de bouton similaire à celle de la page principale */
+    color: #090808;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #573F2E; /* Couleur de survol similaire à celle de la page principale */
+}
+
+p {
+    margin-top: 20px;
+    text-align: center;
+}
+
+a {
+    color: #fff;
+}
+
+

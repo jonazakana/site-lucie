@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connexion</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Assure-toi d'avoir un fichier CSS pour styliser ta page -->
+</head>
+<body>
+    <div class="login-container">
+        <div class="header">
+            <img src="../assets/logo.png" alt="Logo de la boutique" class="logo-img">
+            <div class="logo-text">Erastís</div>
+        </div>
+        <h2>Connexion</h2>
+        <form action="traitement_login.php" method="POST">
+            <input type="email" name="email" placeholder="Adresse e-mail" required>
+            <input type="password" name="password" placeholder="Mot de passe" required>
+            <button type="submit">Se connecter</button>
+        </form>
+        <p>Vous n'avez pas de compte ? <a href="inscription.html">Inscrivez-vous ici</a></p>
+    </div>
+</body>
+</html>
+
+
